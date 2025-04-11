@@ -1,11 +1,11 @@
 const TelegramBot = require('node-telegram-bot-api');
 const { spawn } = require('child_process');
 
-const token = '7522313652:AAEKCZRgbsxmHqedWuFakWjMVxv3q9SKBZQ'; // Tu token real
+const token = ''; // Tu token real
 const bot = new TelegramBot(token, { polling: true });
 
 // Solo permitir ciertos usuarios y solo en chats privados.
-const allowedUsers = [1827509476]; // REEMPLAZA con tu ID (o IDs permitidos)
+const allowedUsers = []; // REEMPLAZA con tu ID (o IDs permitidos)
 const allowedChatTypes = ['private'];
 
 let procesoBot = null;
